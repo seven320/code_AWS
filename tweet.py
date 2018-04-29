@@ -41,3 +41,4 @@ def AWS_handler(event, context):
     status=tweet.manus(num-1)+"\ninstagram.com/ken_4y4"#ツイート内容
     api.update_with_media(filename=pic,status=status)
     print("tweet No:"+str(num))
+    return "tweet.py works"

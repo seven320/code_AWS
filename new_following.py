@@ -57,3 +57,4 @@ def AWS_handler(event, context):
         else:
             api.create_friendship(u.screen_name)
             print("success!! you followed "+str(u.screen_name)+"!!")
+    return "new_following.py works"

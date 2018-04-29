@@ -17,3 +17,4 @@ def AWS_handler(event, context):
     othertimelines=api.user_timeline("togetter_jp")
     for tweet in othertimelines:
         print(tweet.text)
+    return "othertimeline.py works"

@@ -51,3 +51,4 @@ def AWS_handler(event, context):
             print("success follow!"+str(list_followback[follownum]))
         except tweepy.error.TweepError:
             print("Error: You've already requested to follow")
+    return "followback.py works"

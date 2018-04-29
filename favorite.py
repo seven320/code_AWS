@@ -39,3 +39,4 @@ def AWS_handler(event, context):
                 print("I already favorited it")
         else:
             print("This tweet doesn't suit your rules")
+    return "favorite.py success"

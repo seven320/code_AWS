@@ -18,3 +18,4 @@ def AWS_handler(event, context):
 
     for tweet in public_tweets:
         print(tweet.text)
+    return "timeline.py works"
