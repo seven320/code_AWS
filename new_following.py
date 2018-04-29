@@ -41,12 +41,12 @@ def AWS_handler(event, context):
         # print(u.follow_request_sent)
         # print(u._json["following"])
     #ランダムもう一回
-    num1=random.randint(0,count-1)
-    print(num1)
-
     following_id=[]
-    following_id.append(followers[num1])
-    # print(following_id)
+    for i in range(3):
+        num1=random.randint(0,count-1)
+        print(num1)
+        following_id.append(followers[num1])
+    print(following_id)
     following_date=api.lookup_users(user_ids=following_id)
     for u in following_date:
         # #follow-part
